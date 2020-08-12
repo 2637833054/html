@@ -1,0 +1,77 @@
+* {
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			font:normal bold 60px "微软雅黑";
+			margin-left: 37%;
+			color: black;
+		}
+		.aa {
+			width: 200px;
+			height: 30px;
+		}
+		#box {
+			height: 800px;
+			background: #000 url(../image/game6.jpg) repeat;
+			/*background-position: 0 -500px;*/
+			background-size: contain;
+			/* background: rgba(0,0,0,0.5);*/
+		} 
+		.header {
+			margin: 0 300px;
+			height: 70px;
+			position: relative;
+			display: flex;
+		}
+		.header-span {
+			width: 80px;
+			margin-left: 5px;
+			padding: 0;
+			display: inline-block;
+			line-height: 70px;
+			text-align: center;
+			font-size: 20px;
+			color: white;
+			float: left;
+			flex: 1;
+		}
+		.search {
+			padding-top: 40px;
+			padding-left: 80%;
+		}
+		.game {
+			height: 40px;
+			width: 1200px;
+			padding-left: 10px;
+			margin-left: 10%;
+			background-color: rgb(204,230,219);
+			background: rgba(0,0,0,0.2);
+		}
+		.game > span {
+			color: white;
+			width: 140px;
+			padding-top: 10px;
+			display: inline-block;  /*设置模式转化给span设置上边距*/
+		}
+		.gamea {
+			height: 40px;
+			width: 1200px;
+			padding-left: 10px;
+			margin-left: 10%;
+			background-color: rgb(204,230,219);
+			background: rgba(204,230,219,0.2);
+		}
+		.gamea > span {
+			color: white;
+			width: 140px;
+			padding-top: 10px;
+			display: inline-block;  /*设置模式转化给span设置上边距*/
+		}
+		span:hover {
+		 	color: pink;
+		}
+		.cc {
+			height: 30px;
+			width: 60px;
+		}

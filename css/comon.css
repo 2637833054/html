@@ -1,0 +1,39 @@
+h1 {
+				width: 500px;
+				text-align: center;
+				margin-left: calc(50% - 250px);
+			}
+			h2 {
+				width: 800px;
+				text-align: center;
+				margin-left: calc(50% - 400px);
+			}
+			img {
+				width: 400px;
+				margin-left: calc(50% - 200px);
+			}
+			input {
+				width: 140px;
+				margin-left: calc(50% - 70px);
+			}
+			#music {
+				width: 60px;
+				margin-left: calc(80% - 30px);
+				animation: zhuan 4s linear infinite;
+			}
+			
+			@keyframes zhuan{
+				from{}
+				50% {
+					transform: rotate(180deg);
+				}
+				75% {
+					transform: rotate(270deg);
+				}
+				to{
+					transform: rotate(360deg);
+				}
+			}
+			audio {
+				visibility: hidden;
+			}

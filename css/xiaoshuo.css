@@ -1,0 +1,108 @@
+* {
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			padding-top: 20px;
+			padding-bottom: 20px;
+			margin-left: 30%;
+			color: black;
+			display: inline-block;
+		}
+		.search {
+			margin-bottom: 10px;
+			margin-left: 100px;
+			display: inline-block;
+		}
+		.header {
+			margin-left: 200px;
+			height: 40px;
+			/*background-color: rgb(204,230,219);*/
+			display: flex;
+		}
+		.header > span {
+			flex: 1;
+			padding-top: 10px;
+			padding-left: 60px;
+			padding-right: 65px;
+			display: inline-block;  /*设置模式转化给span设置上边距*/
+		}
+		.abody {
+			height: 600px;
+			display: flex;
+		}
+		.bbody {
+			flex: 1;
+			/*background-color: pink;*/
+		}
+		.bbody > span {
+			padding: 0;
+			height: 36px;
+			width: 100px;
+			margin-left: 40px;
+			text-align: center;
+			line-height: 36px;
+			display: inline-block;  /*设置模式转化给span设置上边距*/
+			/*background-color: pink;*/
+			align-items: flex-start;
+			flex: 1;
+		}
+		.cbody {
+			flex: 7;
+			/*background-color: skyblue;*/
+			display: flex;
+		}
+		.abs {
+			margin-top: 20px;
+			position: absolute;
+			display: flex;
+		}
+		.abb {
+			margin-top: 300px;
+			position: absolute;
+			display: flex;
+		}
+		img {
+			margin-top: 5px;
+			margin-bottom: 40px;
+			margin-left: 50px;
+			height: 240px;
+			width: 200px;
+			display: inline-block;
+			transition: box-shadow 0.8s ease 0.1s;
+		}
+		img:hover {
+			margin-top: 3px;
+			box-shadow: 0px 9px 10px 10px rgba(125,385,205,0.9);
+		 }
+		 span:hover {
+		 	color: skyblue;
+		 }
+		div > span {
+			color: black;
+			padding-left: 43%;
+			display: inline-block;
+		}
+		.dis {
+			display: inline-block;
+			flex: 1;
+		}
+		.aa {
+			width: 400px;
+			height: 30px;
+		}
+		.cc {
+			height: 30px;
+			width: 60px;
+		}
+		.dl {
+			display: inline-block;
+		}
+		a {
+			color: black;
+			text-decoration: none;
+		}
+		a:hover {
+			color: red;
+			
+		}

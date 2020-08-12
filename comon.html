@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>励志模式开启</title>
+	<link rel="stylesheet" href="css\comon.css">
+	<script>
+		onload = function () {
+			var btn = document.getElementById('btn');
+			var music = document.getElementById('music');
+			var yinyue = document.getElementById('yinyue');
+				music.onclick = function () {
+					if(yinyue.paused) {
+						yinyue.play();
+					} else {
+						yinyue.pause();
+					}
+					
+				}
+			btn.onclick = function () {
+				alert('欢迎使用本次时光计算服务，我能准确计算出您想要去的那段时光和您现在的距离，不信可以试试！');
+				c = prompt('请输入您想要去的时光：','格式如下：2019-7-5 20:30:54');
+				var date1 = new Date(c);
+				console.log(date1);
+				var date2 = new Date();
+				console.log(date2);
+				var i = date1 - date2;
+				console.log(i);
+				function datedifference (i) {
+					if(i < 0) {
+						i = -i;
+					};
+					var a = i/1000;
+					var tian = Math.floor( a / 60 / 60 / 24);
+					var hour = Math.floor( a / 60 / 60 % 24);
+					var minute = Math.floor( a / 60 % 60);
+					var seconde = Math.floor( a % 60);
+					//var b = new Array(tian,hour,minute,seconde);
+					return {
+						tian,
+						hour,
+						minute,
+						seconde,
+					};
+				}
+				var b = datedifference (i);
+				if (i < 0) {
+					alert('那天距今已有:' + b.tian + '天' + b.hour + '小时' + b.minute + '分' + b.seconde + '秒，过分无法挽回，未来可以改变！加油，少年！');
+				}
+				else  {
+					alert('那天距今还有:' + b.tian + '天' + b.hour + '小时' + b.minute + '分' + b.seconde + '秒,请珍惜时光，加油，少年！');
+				}
+			}
+	}
+	</script>
+</head>
+<body>
+	<img src="image/musicBtn.png" alt="" id="music">
+	<h1>过去无法挽回，未来可以改变！</h1>
+	<img src="image/comeon.jpg" alt="">
+	<h2>人生的道路就像一条大河，由于急流本身的冲击力，在从前没有水流的地方，冲刷出崭新的意料不到的河道</h2>
+	<input type="button" value="查看我所能把握的时间" id="btn">
+	<audio src="骄傲的少年.mp3" autoplay controls id="yinyue"> </audio>
+</body>
+</html>

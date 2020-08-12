@@ -1,0 +1,86 @@
+* {
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			padding-top: 20px;
+			padding-bottom: 20px;
+			margin-left: 42%;
+			color: black;
+		}
+		.header {
+			height: 40px;
+			background-color: rgb(204,230,219);
+			display: flex;
+		}
+		.header > span {
+			padding-top: 10px;
+			padding-left: 60px;
+			padding-right: 65px;
+			display: inline-block;  /*设置模式转化给span设置上边距*/
+			flex: 1;
+		}
+		
+		span:hover {
+		 	color: red;
+		}
+		.rel {
+			width: 100%;
+			height: 290px;
+			position: relative;
+		}
+		.abs {
+			margin-left:100px;
+			position: absolute;
+			display: flex;
+		}
+		img {
+			margin-top: 5px;
+			margin-left: 40px;
+			height: 200px;
+			width: 200px;
+			display: inline-block;
+			transition: box-shadow 0.8s ease 0.1s;
+		}
+		 img:hover {
+			margin-top: 3px;
+			box-shadow: 0px 9px 10px 10px rgba(201,2,33,0.9);
+		 }
+		div > span {
+			width: 140px;
+			color: black;
+			padding-left: calc(50% - 30px);
+			display: inline-block;
+		}
+		div > del {
+			width: 140px;
+			color: black;
+			padding-left: calc(50% - 30px);
+			display: inline-block;
+		}
+		.dis {
+			display: inline-block;
+			flex: 1;
+		}
+		.footer {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			height: 40px;
+			background-color: black;
+			display: flex;
+		}
+		.footer > span {
+			color: white;
+			padding-left: 80px;
+			padding-right: 155px;
+			display: inline-block;  /*设置模式转化给span设置上边距*/
+			flex: 1;
+		}
+		.cc {
+			padding-left: 43%;
+			height: 30px;
+			display: block;
+		}
+		.cd {
+			width: 50px;
+		}
